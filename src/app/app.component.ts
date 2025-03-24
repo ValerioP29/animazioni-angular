@@ -1,12 +1,12 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AnimationsComponent } from './animations/animations.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [AnimationsComponent],
+  template: `<app-animations></app-animations>`,
+  styles: []
 })
-export class AppComponent {
-  title = 'animazioni-angular';
-}
+export class AppComponent { }
